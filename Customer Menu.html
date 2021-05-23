@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Style2.css">
+        >
+        <title>
+            Customer Menu
+        </title>
+    </head>
+
+<body id="1d" class="body">
+    <form id="form1" class="form">
+        <b>
+            <center>
+                <b style="font-size: 200%;">MENU</b>
+            </center>
+        </b><br>
+        <center>
+            &nbsp; 
+            <table>
+                <tr>
+                    <td> <input type = "button"  value = " CHOOSE SERVICES "> </td>
+                </tr>
+                <tr>
+                    <td> <input type = "button"  value = "            PAYMENT        "></td>
+                </tr>
+                <tr>
+                    <td> <input type = "button"  value = "          FEEDBACK       "> </td>
+                </tr>
+            </table>
+
+        </center>
+       
+        
+         
+    </form>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+  $("#b1").click(function(){
+      alert("Added");
+    });
+  </script> 
+
+<script> 
+    $("#b2").click(function(){
+        alert("Cancelled");
+      });
+    </script> 
+
+
+
+<script>
+    $(document).ready(function(){
+      $("form").fadeIn(function(){
+        $("form")
+          .slideUp(2000)
+          .slideDown(2000);
+      });
+    });
+    </script>
+
+</html>

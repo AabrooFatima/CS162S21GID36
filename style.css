@@ -7,6 +7,8 @@ input[type=button]
     border-radius: 10px;
     cursor: pointer;
     float: inline-end;
+    height: 200%;
+    width: 300%;
 }
 
 body
