@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .input-container {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border: 2px solid dodgerblue;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="/action_page.php" style="max-width:500px;margin:auto">
+        <h2>Enter Service to be add</h2>
+        <input type="checkbox" id="prof" name="cate1" value="Cook">
+        <label for="cate1"> Cook</label><br>
+        <input type="checkbox" id="prof" name="cate2" value="Elect">
+        <label for="cate2">Electrician</label><br>
+        <input type="checkbox" id="prof" name="cate3" value="Erand">
+        <label for="cate3">Erand</label><br>
+        <input type="checkbox" id="prof" name="cate4" value="Boat">
+        <label for="cate4">Plumber</label><br>
+        <input type="checkbox" id="prof" name="cate5" value="Boat">
+        <label for="cate5">Cleaner</label><br>
+        <br>
+        <div class="input-container">
+            <i class="fa fa-envelop icon"></i>
+            <input class="input-field" type="text" placeholder="Enter Service" name="usrnm">
+        </div>
+
+        <button type="submit" class="btn">ADD</button>
+    </form>
+
+</body>
+
+</html>
