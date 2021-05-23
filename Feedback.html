@@ -1,0 +1,91 @@
+html>
+    <head>
+        <link rel="stylesheet" href="Style2.css">
+        >
+        <title>
+            Feedback
+        </title>
+    </head>
+
+<body id="1d" class="body">
+    <form id="form1" class="form">
+        <b>
+            <center>
+                <b style="font-size: 200%;">Your Feedback</b>
+            </center>
+        </b><br>
+        <center>
+            &nbsp; 
+            <table id="table">
+                <tr>
+                    <td> SERVICE WAS: </td> 
+                    <td> <input type = "checkbox" value = "">Good  <input type = "checkbox" value = "">Satisfactory  <input type = "checkbox" value = "">Could be better</td>
+                </tr>
+                <tr>
+                    <td>YOUR VIEWS:  </td>
+                    <td><textarea>
+
+                    </textarea>
+                </tr>
+               
+                
+                <tr>                   
+                    <td>YOUR FEEDBACK:</td>
+                    <td><textarea>
+
+                    </textarea>
+                </tr>
+                
+               
+            </table>
+        </center>
+        <center>
+                <center>
+                <tr id="button">
+                   <td> <input id="b1" type = "button" value = "Submit"/> &nbsp; &nbsp; <input id="b2" type = "button" value = "Cancel"/></td>
+                </tr>
+                </center>
+            </table>
+
+        </center>
+       
+        
+         
+    </form>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+  $("#b1").click(function(){
+      alert("Submitted");
+    });
+  </script> 
+
+<script> 
+    $("#b2").click(function(){
+        alert("Cancelled");
+      });
+    </script> 
+
+<script>
+    $(document).ready(function(){
+      $("input").focus(function(){
+        $(this).css("background-color", "black");
+      });
+      $("input").blur(function(){
+        $(this).css("background-color", "white");
+      });
+    });
+    </script>
+
+<script>
+    $(document).ready(function(){
+      $("form").fadeIn(function(){
+        $("form")
+          .slideUp(2000)
+          .slideDown(2000);
+      });
+    });
+    </script>
+
+</html>
