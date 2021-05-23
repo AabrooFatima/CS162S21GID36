@@ -1,0 +1,38 @@
+
+
+body
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("pexels-photo-1546901.jpeg");
+    background-size: cover;
+    height: 100%;
+    
+}
+
+form
+{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-35%, -35%);
+    width: 800px;
+    height: 350px;
+    padding: 70px;
+    background: rgb(70, 126, 79);
+    opacity: 0.7;
+    text-decoration: #000000;
+    text-transform: capitalize;
+}
+
+input[type=button] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: black;
+    border-radius: 10px;
+    cursor: pointer;
+    float: inline-end;
+  }
+
+

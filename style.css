@@ -1,0 +1,26 @@
+input[type=button]
+{
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: black;
+    border-radius: 10px;
+    cursor: pointer;
+    float: inline-end;
+}
+
+body
+{
+    background-image: url("pexels-photo-1546901.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200%;
+   
+}
+
+table [col-sm-1]
+{
+    background-color: rgb(56, 163, 92);
+    opacity: 0.7;
+    padding: 100%;
+}
