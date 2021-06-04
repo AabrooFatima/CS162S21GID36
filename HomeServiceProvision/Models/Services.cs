@@ -9,6 +9,6 @@ namespace HomeServiceProvision.Models
     {
         public int charges { get; set; }
         public String category { get;set;}
-
+        public String job { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace HomeServiceProvision.Models
 {
-    public class Customer
+    public class Customer : Person
     {
         public String ID { get; set; }
         public String pass {get; set;}
