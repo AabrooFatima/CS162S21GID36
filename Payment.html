@@ -1,83 +1,94 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="Style2.css">
-        >
-        <title>
-            Payment
-        </title>
-    </head>
 
-<body id="1d" class="body">
-    <form id="form1" class="form">
-        <b>
-            <center>
-                <b style="font-size: 200%;">Payment</b>
-            </center>
-        </b><br>
-        <center>
-          &nbsp; 
-          <table>
-             
-             
-          </table>
-      </center>
-        <center>
-            <table>
-                <tr>
-                    <td>PAYMENT METHOD:</td>
-                    <td><input type = "radio" name = "Cash">Cash<input type = "radio" name = "Credit Card">Credit Card
-                        <input type = "radio" name = "Easy Paisa">Easy Paisa<input type = "radio" name = "Paypal">Paypal </td>
-                </tr>
-                <tr>
-                  <td>DETAIL:</td>
-                  <td><input type = "mail" name = ""></td>
-              </tr>
-                <center>
-                <tr>
-                   <td> <input id="b1" type = "button" value = "Pay"/> &nbsp; &nbsp; <input id="b2" type = "button" value = "Cancel"/></td>
-                </tr>
-                </center>
-            </table>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-        </center>
-       
+        * {
+            box-sizing: border-box;
+        }
+
+        .input-container {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border: 2px solid dodgerblue;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .a {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            font-style: normal;
+            text-align: center;
+            font:inherit;
+            text-decoration: inherit;
+            font: 13px Arial;
+
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="/action_page.php" style="max-width:500px;margin:auto">
+        <h2>Payment Method</h2>
+        <div class="input-container">
+            <i class="fa fa-money icon"></i>
+            <a class = a href="file:///C:/Users/Qasim%20Ejaz/OneDrive/Desktop/Choose%20Services.html">Cash</a>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-credit-card icon"></i>
+            <button type="Feedback" class="btn">Online</button>
+        </div>
         
-         
     </form>
+
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script> 
-  $("#b1").click(function(){
-      alert("Added");
-    });
-  </script> 
-
-<script> 
-    $("#b2").click(function(){
-        alert("Cancelled");
-      });
-    </script> 
-
-<script>
-    $(document).ready(function(){
-      $("input").focus(function(){
-        $(this).css("background-color", "black");
-      });
-      $("input").blur(function(){
-        $(this).css("background-color", "white");
-      });
-    });
-    </script>
-
-<script>
-    $(document).ready(function(){
-      $("form").fadeIn(function(){
-        $("form")
-          .slideUp(2000)
-          .slideDown(2000);
-      });
-    });
-    </script>
 
 </html>
