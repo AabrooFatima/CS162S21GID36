@@ -7,11 +7,11 @@ namespace HomeServiceProvision.Models
 {
     public class Employee :Person
     {
-        private String CNIC { get; set; }
-        public String ID;
-        private String Age{ get; set; }
-        private String Expertise { get; set; }
-        private String Password { get; set; }
+        public String CNIC { get; set; }
+        public String ID { get; set; }
+        public String Age{ get; set; }
+        public String Expertise { get; set; }
+        public String Password { get; set; }
 
         
         

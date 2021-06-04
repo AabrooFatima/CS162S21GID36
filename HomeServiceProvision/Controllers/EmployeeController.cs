@@ -10,6 +10,7 @@ namespace HomeServiceProvision.Controllers
     public class EmployeeController : Controller
     {
         // GET: Employee
+        [HttpPost]
         public bool addEmp(Employee obj)
         {
             bool f = false;
@@ -17,6 +18,7 @@ namespace HomeServiceProvision.Controllers
             f = true;
             return f;
         }
+        [HttpPost]
         public bool delEmp(String id)
         {
             bool f = false;
@@ -30,11 +32,24 @@ namespace HomeServiceProvision.Controllers
             }
             return f;
         }
-        public bool editEmp(String address, Employee obj)
+        [HttpPost]
+        public bool editEmp(String id, Employee obj)
         {
             bool f = false;
-            for(int i=0;i<)
+            for(int i=0;i<Receipt.Staff.Count;i++)
+            {
+                if(Receipt.Staff[i].ID==id)
+                {
+                    Receipt.Staff.Insert(i, obj);
+                    f = true;
+                }
+
+            }
             return f;
         }
+        [HttpGet]
+        public List<Employee> viewEmp()
+        {
+            return Receipt.Staff;        }
     }
 }
