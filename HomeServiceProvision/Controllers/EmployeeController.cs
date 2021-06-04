@@ -50,6 +50,7 @@ namespace HomeServiceProvision.Controllers
         [HttpGet]
         public List<Employee> viewEmp()
         {
-            return Receipt.Staff;        }
+            return Receipt.Staff;       
+        }
     }
 }
