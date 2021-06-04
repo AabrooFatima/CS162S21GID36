@@ -7,5 +7,7 @@ namespace HomeServiceProvision.Models
 {
     public class Receipt
     {
+        public static List <Employee> Staff= new List<Employee>();
+
     }
 }

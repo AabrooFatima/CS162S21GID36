@@ -7,5 +7,7 @@ namespace HomeServiceProvision.Models
 {
     public class Customer
     {
+        public String ID { get; set; }
+        public String pass {get; set;}
     }
 }
