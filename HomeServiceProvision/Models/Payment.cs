@@ -5,7 +5,9 @@ using System.Web;
 
 namespace HomeServiceProvision.Models
 {
-    public class Payment
+   interface Payment
     {
+        payBill();
+        generateReceipt();
     }
 }

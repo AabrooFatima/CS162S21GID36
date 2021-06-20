@@ -10,6 +10,7 @@ namespace HomeServiceProvision.Models
         public String ID { get; set; }
         public String pass {get; set;}
         public Feedback views { get; set; }
+        Order order1 = new Order();
 
     }
 }
