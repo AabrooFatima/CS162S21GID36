@@ -51,5 +51,11 @@ namespace HomeServiceProvision.Controllers
     {
         return Receipt.Users;
     }
-}
+    [HttpGet]
+    public Order viewOrder()
+    {
+        return Customer.Order;
+    }
+    
+    }
 }
