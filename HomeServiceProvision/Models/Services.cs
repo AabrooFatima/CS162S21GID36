@@ -7,8 +7,12 @@ namespace HomeServiceProvision.Models
 {
     public class Services
     {
-        public int charges { get; set; }
-        public String category { get;set;}
-        public String job { get; set; }
+        public int charges;
+        public String Name { get;set;}
+        public String Description { get; set; }
+
+       
+            
+        
     }
 }

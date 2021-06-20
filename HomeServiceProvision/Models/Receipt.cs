@@ -9,6 +9,10 @@ namespace HomeServiceProvision.Models
     {
         public static List <Employee> Staff= new List<Employee>();
         public static List<Customer> Users = new List<Customer>();
-        public static List<Services> Jobs = new List<Services>();
+        public static List<Services> ErandServices = new List<Services>();
+        public static List<Services> ElectricianServices = new List<Services>();
+        public static List<Services> CookServices = new List<Services>();
+        public static List<Services> CleanerServices = new List<Services>();
+        public static List<Services> PlumberServices = new List<Services>();
     }
 }

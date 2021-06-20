@@ -32,7 +32,7 @@ namespace HomeServiceProvision.Controllers
         return f;
     }
     [HttpPost]
-    public bool editEmp(String id, Customer obj)
+    public bool editCust(String id, Customer obj)
     {
         bool f = false;
         for (int i = 0; i < Receipt.Users.Count; i++)
@@ -47,7 +47,7 @@ namespace HomeServiceProvision.Controllers
         return f;
     }
     [HttpGet]
-    public List<Customer> viewEmp()
+    public List<Customer> viewCust()
     {
         return Receipt.Users;
     }
