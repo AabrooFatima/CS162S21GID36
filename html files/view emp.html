@@ -1,44 +1,53 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
-  <style>
-    table,
-    th,
-    td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-    th,
-    td {
-      padding: 15px;
-    }
-  </style>
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
-
 <body>
 
-  <h2>View Employee</h2>
+    <h2>View Feedback</h2>
 
-  <table style="width:100%">
-    <tr>
-      <th>Employee ID</th>
-      <th>Name</th>
-      <th>Contact</th>
-      <th>Ability</th>
-    </tr>
-    <tr>
-      <td>EMP-1</td>
-      <td>Smith</td>
-      <td>09876543621</td>
-      <td>Cooking</td>
-    </tr>
+    <table>
+        <tr>
 
-  </table>
-
-
+            <th>Customer Name</th>
+            <th>Contact</th>
+            <th>Address</th>
+            <th>Service Provided</th>
+            <th>Feedback</th>
+        </tr>
+        <tr>
+            <td>Crystle</td>
+            <td>09876543621</td>
+            <td>Soon Valley</td>
+            <td>AC repair</td>
+            <td>The job done was amazing. Really nice experience</td>
+        </tr>
+        <tr>
+            <td>Smith</td>
+            <td>09876543621</td>
+            <td>Lahore</td>
+            <td>Cleaning</td>
+            <td>It couldbe better. But over all it was a good </td>
+        </tr>
+    </table>
 
 </body>
-
 </html>
